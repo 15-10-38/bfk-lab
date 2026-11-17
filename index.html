@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b4a">
+  <meta name="description" content="BFK LAB – platformă educațională pentru anatomie funcțională și kinetoterapie.">
+  <title>BFK LAB | Anatomie și kinetoterapie</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="BFK LAB, pagina principală">
+      <span class="brand-mark">B</span>
+      <span><strong>BFK LAB</strong><small>ANATOMIE · MIȘCARE · RECUPERARE</small></span>
+    </a>
+    <button id="installBtn" class="install-btn" hidden>Instalează aplicația</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PLATFORMĂ DE ÎNVĂȚARE PENTRU BFK</p>
+        <h1>Înțelege corpul.<br><em>Învață mișcarea.</em></h1>
+        <p class="hero-text">Un spațiu de studiu pentru anatomie funcțională, biomecanică și principiile kinetoterapiei.</p>
+        <a class="primary-link" href="#modules">Explorează modulele <span>↘</span></a>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="body-icon">
+          <div class="head"></div><div class="torso"></div><div class="arm left"></div><div class="arm right"></div>
+          <div class="leg left"></div><div class="leg right"></div>
+          <span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span>
+        </div>
+        <div class="graphic-label label-top">ANATOMIE</div>
+        <div class="graphic-label label-bottom">FUNCȚIE</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Caracteristici">
+      <div><strong>05</strong><span>module de bază</span></div>
+      <div><strong>RO</strong><span>conținut în română</span></div>
+      <div><strong>24/7</strong><span>accesibilă online</span></div>
+      <div><strong>+</strong><span>dezvoltare modulară</span></div>
+    </section>
+
+    <section id="modules" class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">BIBLIOTECA DE STUDIU</p><h2>Învață pas cu pas</h2></div>
+        <p class="section-intro">Alege un domeniu pentru a parcurge noțiunile esențiale și verifică-ți cunoștințele prin întrebări.</p>
+      </div>
+      <div class="module-grid" id="moduleGrid"></div>
+    </section>
+
+    <section class="study-panel" id="studyPanel" hidden>
+      <button class="back-link" id="backBtn">← Înapoi la module</button>
+      <div id="moduleContent"></div>
+    </section>
+
+    <section class="section pathway">
+      <div class="section-heading">
+        <div><p class="eyebrow">ÎNVĂȚARE APLICATĂ</p><h2>De la structură la funcție</h2></div>
+        <p class="section-intro">Anatomia capătă sens atunci când este corelată cu mișcarea, evaluarea funcțională și obiectivele recuperării.</p>
+      </div>
+      <div class="pathway-grid">
+        <article><span>01</span><h3>Identifică</h3><p>Localizează structurile anatomice și folosește terminologia corectă.</p></article>
+        <article><span>02</span><h3>Corelează</h3><p>Înțelege rolul articulațiilor, mușchilor și segmentelor în mișcare.</p></article>
+        <article><span>03</span><h3>Aplică</h3><p>Analizează exercițiile prin prisma scopului, execuției și siguranței.</p></article>
+      </div>
+    </section>
+
+    <section class="notice">
+      <div class="notice-icon">i</div>
+      <div><strong>Notă educațională</strong><p>BFK LAB este un instrument de învățare. Informațiile despre exerciții nu înlocuiesc evaluarea clinică, diagnosticul, indicația medicală sau supravegherea unui specialist. Exercițiile se individualizează în funcție de pacient, obiective, stadiul afecțiunii și contraindicații.</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">BFK LAB</div>
+    <p>Resursă educațională în dezvoltare pentru studenții și practicienii din domeniul BFK.</p>
+    <small>Versiunea demonstrativă 1.0 · Conținut introductiv</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
